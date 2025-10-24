@@ -1,0 +1,14 @@
+import React from 'react';
+import { Layout, Typography } from "antd";
+import { useTranslation } from 'react-i18next';
+
+const Footer: React.FC = () => {
+  const { t } = useTranslation();
+  return (
+    <Layout.Footer>
+      <Typography.Title level={3} style={{ textAlign: 'center' }}>{t('footerCopyright')}</Typography.Title>
+    </Layout.Footer>
+  );
+};
+
+export default Footer;
